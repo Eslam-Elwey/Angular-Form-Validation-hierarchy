@@ -1,0 +1,91 @@
+.form-sec
+{
+  background-color: #0D7377;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 80%;
+  margin:40px auto ;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-sec .input-item::placeholder
+{
+  color: rgb(216, 200, 200);
+}
+.form-sec .input-item
+{
+  padding: 18px 20px;
+  background-color: #323232;
+  color:white;
+  margin: 15px auto;
+  width: 100%;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  outline: none;
+  border-radius: 2px solid #CCC;
+  -webkit-border-radius: 2px solid #CCC;
+  -moz-border-radius: 2px solid #CCC;
+  -ms-border-radius: 2px solid #CCC;
+  -o-border-radius: 2px solid #CCC;
+}
+
+.form-sec .button
+{
+  padding: 18px 6px;
+  width: 40%;
+  margin: 15px auto;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  color: #212121;
+  background-color: #14FFEC;
+  outline: none;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  border:2px solid #14FFEC;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
+}
+
+.form-sec .button:active
+{
+  width:60%;
+  background-color: green;
+  color: white;
+}
+
+.invalid-uname , .invalid-uage
+{
+  color: rgb(255, 106, 0);
+  width : 50% ;
+  margin: auto;
+  font-size: 1.2rem;
+  position: absolute;
+  top : 70px;
+}
+
+.name-sec , .age-sec
+{
+  position: relative;
+  width : 80%;
+  margin : auto ;
+}
+
+
+.invalid-uname .valid , .invalid-uage .valid
+{
+  color: rgb(204, 239, 8);
+}

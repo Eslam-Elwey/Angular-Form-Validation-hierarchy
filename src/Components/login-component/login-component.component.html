@@ -1,0 +1,40 @@
+<div class="form-sec">
+  <div class="name-sec">
+    <input
+      class="input-item"
+      type="text"
+      placeholder="User Name"
+      [(ngModel)]="userName"
+    />
+    <div class="invalid-uname">
+      <!-- <p *ngIf="userName.length<3">Invalid User Name</p> -->
+      @if(userName&&!nameStatus) {
+      <p *ngIf="userName.length < 3">Invalid User Name</p>
+      } @else if(userName) {
+      <p class="valid">Valid User Name</p>
+      }
+    </div>
+  </div>
+
+  <div class="age-sec">
+    <input
+      class="input-item"
+      type="age"
+      placeholder="User Age"
+      [(ngModel)]="userAge"
+    />
+    <div class="invalid-uage">
+      <!-- <p *ngIf="+userAge>=30">Invalid Age(must be less than 30)</p> -->
+      @if(userAge&&!ageStatus) {
+      <p>Invalid Age(must be less than 30 and higher than 5)</p>
+      } @else if(userAge) {
+        <p class="valid">Valid Age</p>
+      }
+      @else
+      {
+
+      }
+    </div>
+  </div>
+  <input class="button" type="button" value="Add User" (click)="addUser()" />
+</div>

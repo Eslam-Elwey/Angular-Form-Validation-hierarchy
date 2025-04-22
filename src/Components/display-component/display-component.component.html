@@ -1,0 +1,12 @@
+
+<div class="all-users">
+  <div class="header-info">
+    <h2>User Name</h2>
+    <h2>User Age</h2>
+  </div>
+
+  <div class="user" *ngFor="let user of dataTODisplay; let i = index;">
+    <h2>{{ user.name }}</h2>
+    <h2>{{ user.age }}</h2>
+  </div>
+</div>

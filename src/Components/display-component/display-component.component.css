@@ -1,0 +1,50 @@
+.all-users
+{
+  background-color: #4E1F00;
+  width:80%;
+  margin:50px auto;
+  padding: 25px 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.header-info , .user
+{
+  display: flex;
+  background-color: #212121 ;
+  color:white;
+  /* border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px; */
+}
+
+.header-info h2 , .user h2
+{
+  text-align: center;
+  width : 50%;
+  position: relative;
+}
+
+.header-info h2:first-child::after , .user h2:first-child::after
+{
+  content:"";
+  position: absolute;
+  background-color: yellowgreen;
+  width:3px;
+  height : 240%;
+  top:-18px;
+  left:100%;
+}
+
+.all-users .user.user:nth-child(2n){
+  background-color: #323232;
+}
+
+.all-users .user.user:nth-child(2n+1){
+  background-color: #0D7377;
+}
